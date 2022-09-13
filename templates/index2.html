@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .item{
+            font-size: 23px;
+        }
+        #textarea {
+            margin: 0px;
+            width: 721px;
+            height:93px;
+        }
+        /* #removepunc{
+            display: inline;
+        } */
+        .btn{
+            display: block;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+<h1>welcome to the text analyzer.</h1>
+<div class="item"> enter your text below:</div>
+<form action="/analyze" method="get">
+    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <br>
+    <input type="checkbox" name="removepunc" id="removepunc">remove punctuations
+    <input type="checkbox" name="fullcap" id="fullcap"> capitalize
+    <input type="checkbox" name="newlineremover" id="newlineremover"> newlineremover
+    <input type="checkbox" name="extraspaceremover" id="extraspaceremover"> extraspaceremover
+    <input type="checkbox" name="character_counter" id="character_counter"> character_counter
+    <button type="submit" class="btn">analyzer text</button>
+</form>
+</div>
+</body>
+</html>
